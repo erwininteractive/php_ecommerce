@@ -3,9 +3,6 @@
 ?>
 
 <x-app-layout>
-    <div class="text-center text-black-600 py-16 text-xl">
-      Source code <a href="https://gitlab.com/andrewthecoder/ecommerce">HERE</a>
-    </div>
     <?php if ($products->count() === 0): ?>
         <div class="text-center text-gray-600 py-16 text-xl">
             There are no products published
