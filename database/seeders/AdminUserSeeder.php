@@ -16,11 +16,19 @@ class AdminUserSeeder extends Seeder
     public function run()
     {
         User::create([
-            'name' => 'andrew',
-            'email' => 'andrew@erwininteractive.com',
+            'name' => 'administrator',
+            'email' => 'ecommerce@erwininteractive.com',
             'password' => bcrypt('password'),
             'email_verified_at' => now(),
             'is_admin' => true
+        ]);
+
+        User::create([
+            'name' => 'Test User',
+            'email' => 'resr@example.com',
+            'password' => bcrypt('password'),
+            'email_verified_at' => now(),
+            'is_admin' => false
         ]);
     }
 }
