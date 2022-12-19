@@ -13,9 +13,8 @@ class ProductController extends Controller
             ->where('published', '=', 1)
             ->orderBy('updated_at', 'desc')
             ->paginate(5);
-        return view('product.index', [
-            'products' => $products
-        ]);
+
+        return view('product.index', ['products' => $products]);
     }
 
     public function view(Product $product)

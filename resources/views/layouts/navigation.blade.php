@@ -6,8 +6,9 @@
     @cart-change.window="cartItemsCount = $event.detail.count"
     class="flex justify-between bg-slate-800 shadow-md text-white"
 >
-    <div>
+    <div class="flex">
         <a href="{{ route('home') }}" class="block py-navbar-item pl-5"> Logo </a>
+        <a href="{{ route('products') }}" class="block py-navbar-item pl-5"> Products </a>
     </div>
     <!-- Responsive Menu -->
     <div
